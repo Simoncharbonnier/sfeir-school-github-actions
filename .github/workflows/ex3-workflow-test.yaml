@@ -1,0 +1,9 @@
+name: Workflow Test
+on:
+    workflow_dispatch:
+
+jobs:
+    run-workflow-test:
+        uses: ./.github/workflows/ex3-reusable-workflow.yaml
+        with:
+            node-version: 20
